@@ -135,12 +135,7 @@ class UiMain(QMainWindow):
 
         # shows the main window
         self.show()
-
-        # self.update()
-        CheckUpdateThread = Thread(target=self.update)
-        CheckUpdateThread.setName('CheckUpdateThread')
-        CheckUpdateThread.run()
-
+        
     def closeEvent(self, event):
         """ an automatically called function when the program is about to
         close.
