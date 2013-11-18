@@ -37,3 +37,7 @@ Most of the program is commented, some places a little better than at others, bu
 Other
 -----
 Icon is from http://www.happyiconstudio.com/
+
+SMG-fork information
+-----
+This is a fork for my own purposes. It disables updates, adds support for Chromium nightly builds, and adds webhook support on title change. Some features may be merged back into core, who knows. I should probably add unit testing too.
