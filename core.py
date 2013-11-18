@@ -498,6 +498,7 @@ class Main:
                         title = firsthalf
                     Wr.write(title)
                     Constants.UI.set_playing(title)
+                    # TODO: note to self, add webhooks
 
 
 class Config(ConfigParser.RawConfigParser):
