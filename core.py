@@ -83,6 +83,18 @@ class ProgramToken:
                 logging.exception(err)
 
         @staticmethod
+        def chromium_nightly(title, className=None):
+            """ Chromium / Canary webbrowser """
+            try:
+                identifier = '- Chromium'.decode('utf-8')
+                if identifier in title:
+                    title = title.replace(identifier, '')
+                    return title
+                return False
+            except Exception, err:
+                logging.exception(err)
+
+        @staticmethod
         def chrome_application(title, className=None):
             """ Google chrome's application mode """
             try:
@@ -395,6 +407,7 @@ class ProgramToken:
 
     WebbrowserFunctions = {
         'chrome': Webbrowser.chrome,
+        'chromium': Webbrowser.chromium_nightly,
         'chrome_application': Webbrowser.chrome_application,
         'firefox': Webbrowser.firefox
     }
